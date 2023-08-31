@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="2158.32" />
+	<attribute name="Next Replicated Node ID" value="113" />
+	<attribute name="Next Replicated Component ID" value="305" />
+	<attribute name="Next Local Node ID" value="16783552" />
+	<attribute name="Next Local Component ID" value="16784605" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="DebugRenderer" id="2" />
+	<component type="PhysicsWorld" id="9" />
+	<node id="16777217">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="AmbientLight" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 1.31427 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Zone" id="16777228">
+			<attribute name="Bounding Box Min" value="-1000 -1000 -1000" />
+			<attribute name="Bounding Box Max" value="1000 1000 1000" />
+			<attribute name="Ambient Color" value="0 0 0 0" />
+			<attribute name="Fog Color" value="1 1 1 1" />
+			<attribute name="Fog Start" value="0" />
+			<attribute name="Fog End" value="500" />
+			<attribute name="Fog Height Scale" value="10" />
+			<attribute name="Override Mode" value="true" />
+			<attribute name="Ambient Gradient" value="true" />
+		</component>
+	</node>
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 5.92786 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="59">
+			<attribute name="Color" value="0.8 0.8 0.9 1" />
+			<attribute name="Brightness Multiplier" value="0.5" />
+			<attribute name="Temperature" value="9000" />
+			<attribute name="Radius" value="5" />
+			<attribute name="Range" value="70" />
+			<attribute name="Light Shape Texture" value="TextureCube;" />
+		</component>
+	</node>
+	<node id="24">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Pool" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="10 4 10" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="56">
+			<attribute name="Model" value="Model;Models/Pool.mdl" />
+			<attribute name="Material" value="Material;" />
+		</component>
+		<component type="CollisionShape" id="57">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Pool.mdl" />
+		</component>
+		<component type="RigidBody" id="58">
+			<attribute name="Collision Layer" value="2" />
+		</component>
+		<node id="25">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="LeftSideLight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -0.5 -1" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="0.1 0.25 0.1" />
+			<attribute name="Variables" />
+			<component type="Light" id="60">
+				<attribute name="Light Type" value="Spot" />
+				<attribute name="Range" value="20" />
+				<attribute name="Spot FOV" value="90" />
+			</component>
+		</node>
+		<node id="26">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="RightSideLight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -0.5 1" />
+			<attribute name="Rotation" value="-6.33815e-08 1 0 0" />
+			<attribute name="Scale" value="0.1 0.25 0.1" />
+			<attribute name="Variables" />
+			<component type="Light" id="61">
+				<attribute name="Light Type" value="Spot" />
+				<attribute name="Range" value="20" />
+				<attribute name="Spot FOV" value="90" />
+			</component>
+		</node>
+		<node id="27">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="TopSideLight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="1 -0.5 0" />
+			<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="Light" id="62">
+				<attribute name="Light Type" value="Spot" />
+				<attribute name="Range" value="20" />
+				<attribute name="Spot FOV" value="90" />
+			</component>
+		</node>
+		<node id="28">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="BottomSideLight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1 -0.5 0" />
+			<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="Light" id="63">
+				<attribute name="Light Type" value="Spot" />
+				<attribute name="Range" value="20" />
+				<attribute name="Spot FOV" value="90" />
+			</component>
+		</node>
+	</node>
+	<node id="16783512">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="tubes" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="1.75 0 2.1" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="16783513">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="top_tubes" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -3.07 0" />
+			<attribute name="Rotation" value="0.707107 0 0 0.707107" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16783510">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0.5 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784486">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="1.25 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784487" />
+				<component type="StaticModel" id="16784488">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783514">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -2" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784492">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.07 0.0999999" />
+				</component>
+				<component type="CollisionShape" id="16784493" />
+				<component type="StaticModel" id="16784494">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783515">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 2 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784495">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="-0.250001 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784496" />
+				<component type="StaticModel" id="16784497">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783516">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784498">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.07 2.1" />
+				</component>
+				<component type="CollisionShape" id="16784499" />
+				<component type="StaticModel" id="16784500">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783517">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784501">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="1.75 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784502" />
+				<component type="StaticModel" id="16784503">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783518">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1.5 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784504">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="0.249999 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784505" />
+				<component type="StaticModel" id="16784506">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783519">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784507">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="0.749999 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784508" />
+				<component type="StaticModel" id="16784509">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783520">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1.5" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784510">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.07 0.6" />
+				</component>
+				<component type="CollisionShape" id="16784511" />
+				<component type="StaticModel" id="16784512">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783521">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -0.5" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784513">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.07 1.6" />
+				</component>
+				<component type="CollisionShape" id="16784514" />
+				<component type="StaticModel" id="16784515">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783522">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784516">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.07 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784517" />
+				<component type="StaticModel" id="16784518">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="16783523">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="bottom_tubes" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -3.87 0" />
+			<attribute name="Rotation" value="0.707107 0 0 0.707107" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16783524">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0.5 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784519">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="1.25 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784520" />
+				<component type="StaticModel" id="16784521">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783525">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -2" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784522">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.87 0.0999999" />
+				</component>
+				<component type="CollisionShape" id="16784523" />
+				<component type="StaticModel" id="16784524">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783526">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 2 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784525">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="-0.250001 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784526" />
+				<component type="StaticModel" id="16784527">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783527">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784528">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.87 2.1" />
+				</component>
+				<component type="CollisionShape" id="16784529" />
+				<component type="StaticModel" id="16784530">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783528">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784531">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="1.75 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784532" />
+				<component type="StaticModel" id="16784533">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783529">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1.5 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784534">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="0.249999 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784535" />
+				<component type="StaticModel" id="16784536">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783530">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1" />
+				<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784537">
+					<attribute name="Physics Rotation" value="0.5 0.5 0.5 0.5" />
+					<attribute name="Physics Position" value="0.749999 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784538" />
+				<component type="StaticModel" id="16784539">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783531">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1.5" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784540">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.87 0.6" />
+				</component>
+				<component type="CollisionShape" id="16784541" />
+				<component type="StaticModel" id="16784542">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783532">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -0.5" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784543">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.87 1.6" />
+				</component>
+				<component type="CollisionShape" id="16784544" />
+				<component type="StaticModel" id="16784545">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+			<node id="16783533">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 1 -1" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 2 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784546">
+					<attribute name="Physics Rotation" value="0.707107 0 0 0.707107" />
+					<attribute name="Physics Position" value="0.749999 -3.87 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784547" />
+				<component type="StaticModel" id="16784548">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVFrame.xml" />
+				</component>
+			</node>
+		</node>
+		<node id="16783534">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="side_tubes" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 -3.87 0" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16783536">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0.4 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784552">
+					<attribute name="Physics Position" value="1.75 -3.47 2.1" />
+				</component>
+				<component type="CollisionShape" id="16784553">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784554">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783537">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-1 0.4 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784555">
+					<attribute name="Physics Position" value="0.75 -3.47 2.1" />
+				</component>
+				<component type="CollisionShape" id="16784556">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784557">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783538">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-2 0.4 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784558">
+					<attribute name="Physics Position" value="-0.25 -3.47 2.1" />
+				</component>
+				<component type="CollisionShape" id="16784559">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784560">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783539">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0.4 -1" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784561">
+					<attribute name="Physics Position" value="1.75 -3.47 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784562">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784563">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783540">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0.4 -2" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784564">
+					<attribute name="Physics Position" value="1.75 -3.47 0.0999999" />
+				</component>
+				<component type="CollisionShape" id="16784565">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784566">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783541">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-1 0.4 -2" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784567">
+					<attribute name="Physics Position" value="0.75 -3.47 0.0999999" />
+				</component>
+				<component type="CollisionShape" id="16784568">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784569">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783542">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-2 0.4 -2" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784570">
+					<attribute name="Physics Position" value="-0.25 -3.47 0.0999999" />
+				</component>
+				<component type="CollisionShape" id="16784571">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784572">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+			<node id="16783543">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="-2 0.4 -1" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="0.02 0.8 0.02" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16784573">
+					<attribute name="Physics Position" value="-0.25 -3.47 1.1" />
+				</component>
+				<component type="CollisionShape" id="16784574">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+				</component>
+				<component type="StaticModel" id="16784575">
+					<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+					<attribute name="Material" value="Material;Materials/AUV/AUVAcril.xml" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16783545">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="arrows" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.5 -3.87 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="16783546">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="1" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.5 0 0.35" />
+			<attribute name="Rotation" value="-8.74228e-08 0 1 -0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16784592">
+				<attribute name="Model" value="Model;Models/Arrow.mdl" />
+				<attribute name="Material" value="Material;Materials/Colors/Orange.xml" />
+			</component>
+		</node>
+		<node id="16783547">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="2" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="1 0 0.35" />
+			<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16784591">
+				<attribute name="Model" value="Model;Models/Arrow.mdl" />
+				<attribute name="Material" value="Material;Materials/Colors/Orange.xml" />
+			</component>
+		</node>
+		<node id="16783548">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="3" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="1 0 1.35" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16784590">
+				<attribute name="Model" value="Model;Models/Arrow.mdl" />
+				<attribute name="Material" value="Material;Materials/Colors/Orange.xml" />
+			</component>
+		</node>
+		<node id="16783549">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="4" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.5 0 1.35" />
+			<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16784589">
+				<attribute name="Model" value="Model;Models/Arrow.mdl" />
+				<attribute name="Material" value="Material;Materials/Colors/Orange.xml" />
+			</component>
+		</node>
+		<node id="16783550">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.5 0 1.85" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16784588">
+				<attribute name="Model" value="Model;Models/Arrow.mdl" />
+				<attribute name="Material" value="Material;Materials/Colors/Orange.xml" />
+			</component>
+		</node>
+	</node>
+	<node id="110">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="start" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -3.88 -0.15" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.4 0.01 0.4" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="299">
+			<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+			<attribute name="Material" value="Material;Materials/AUV/AUVKillswitch.xml" />
+		</component>
+		<component type="RigidBody" id="300">
+			<attribute name="Physics Position" value="0 -3.88 -0.15" />
+		</component>
+		<component type="CollisionShape" id="301" />
+	</node>
+	<node id="112">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="finish" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.5 -3.88 1.85" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.4 0.01 0.4" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="302">
+			<attribute name="Model" value="Model;Models/Cylinder.mdl" />
+			<attribute name="Material" value="Material;Materials/AUV/AUVKillswitch.xml" />
+		</component>
+		<component type="RigidBody" id="303">
+			<attribute name="Physics Position" value="-0.5 -3.88 1.85" />
+		</component>
+		<component type="CollisionShape" id="304" />
+	</node>
+</scene>
